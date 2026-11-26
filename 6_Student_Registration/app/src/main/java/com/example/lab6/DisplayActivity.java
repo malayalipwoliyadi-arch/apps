@@ -1,0 +1,3 @@
+package com.example.lab6;
+import android.content.SharedPreferences; import android.os.Bundle; import android.widget.TextView; import androidx.appcompat.app.AppCompatActivity;
+public class DisplayActivity extends AppCompatActivity { @Override protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.activity_display); TextView t=findViewById(R.id.txtDetails); SharedPreferences p=getSharedPreferences("StudentData",MODE_PRIVATE); t.setText("Student Details\n\nName: "+p.getString("name","")+"\nRoll No: "+p.getString("rollNo","")+"\nEmail: "+p.getString("email","")+"\nGender: "+p.getString("gender",""));} }

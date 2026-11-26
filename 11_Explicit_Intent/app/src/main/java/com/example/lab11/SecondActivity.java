@@ -1,0 +1,2 @@
+package com.example.lab11; import android.os.Bundle; import android.widget.TextView; import androidx.appcompat.app.AppCompatActivity;
+public class SecondActivity extends AppCompatActivity { @Override protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.activity_second);TextView t=findViewById(R.id.tvDetails);String name=getIntent().getStringExtra("name"),roll=getIntent().getStringExtra("rollNo"),course=getIntent().getStringExtra("course");t.setText("Student Name: "+name+"\nRoll Number: "+roll+"\nCourse: "+course);} }

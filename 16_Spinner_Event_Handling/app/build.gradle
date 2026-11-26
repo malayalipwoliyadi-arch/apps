@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.example.lab16'
+    compileSdk 35
+    defaultConfig { applicationId 'com.example.lab16'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0' }
+}
+
+dependencies { implementation 'androidx.appcompat:appcompat:1.7.0' }

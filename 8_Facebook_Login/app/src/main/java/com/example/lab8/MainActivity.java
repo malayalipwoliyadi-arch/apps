@@ -1,0 +1,2 @@
+package com.example.lab8; import android.os.Bundle; import android.widget.Button; import android.widget.EditText; import android.widget.Toast; import androidx.appcompat.app.AppCompatActivity;
+public class MainActivity extends AppCompatActivity { @Override protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.activity_main); EditText email=findViewById(R.id.edtEmail), pass=findViewById(R.id.edtPassword); Button login=findViewById(R.id.btnLogin); login.setOnClickListener(v->Toast.makeText(this,"Login button clicked",Toast.LENGTH_SHORT).show());} }
